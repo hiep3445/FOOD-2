@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "food-ordering",
+  "main": "apps/api/src/index.ts",
+  "compatibility_date": "2026-10-19",
+  "assets": {
+    "directory": "./apps/web/dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "food-ordering",
+      "database_id": "20a6d5db-f92f-4a23-893f-9f9835d1448a",
+      "migrations_dir": "apps/api/migrations"
+    }
+  ],
+  "vars": {
+    "STORE_NAME": "Bếp Nhà Mình",
+    "DELIVERY_FEE": "20000",
+    "SESSION_TTL_HOURS": "72"
+  }
+}

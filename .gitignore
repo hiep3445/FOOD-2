@@ -1,0 +1,44 @@
+node_modules/
+**/node_modules/
+.wrangler/
+**/.wrangler/
+.dev.vars
+**/.dev.vars
+.dev.vars.*
+**/.dev.vars.*
+.env
+.env.*
+wrangler-account.json
+**/wrangler-account.json
+FOOD/node_modules/
+FOOD/.wrangler/
+.wrangler/
+**/.wrangler/
+.dev.vars
+**/.dev.vars
+.env
+.env.*
+wrangler-account.json
+**/wrangler-account.json
+node_modules/
+**/node_modules/
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Cloudflare
+.wrangler/
+
+# Build files
+**/dist/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
